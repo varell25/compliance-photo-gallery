@@ -31,5 +31,6 @@ def upload_property_image_pair(property_id: str, image_pair: ImagePair = Body(..
     return {
         "message": "Image pair uploaded successfully",
         "compliance_id": image_pair.compliance_id,
-        "property_id": property_id
+        "property_id": property_id,
+        "pair_id": image_pair.pair_id
     }
